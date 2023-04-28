@@ -171,3 +171,24 @@ button:active {
   font-size: 55px;
   text-decoration: none;
 }
+
+.watchmovie {
+  width: 100%;
+  height: calc(100vh - 220px);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.watchmovie h2 {
+  color: white;
+}
+
+.watchmovie img {
+  width: 75%;
+  height: 600px;
+}
+
+.watch-wrapper a {
+  font-size: 55px;
+  text-decoration: none;
+}

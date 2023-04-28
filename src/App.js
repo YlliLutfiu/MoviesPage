@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ErrorPage from "./Pages/ErrorPage";
 import SingleProductPage from "./Pages/SingleProductPage";
+import WatchPage from "./Pages/WatchPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<ProductsPage />} />
         <Route path="/movies/:movieId" element={<SingleProductPage />} />
+        <Route path="/movies/:movieId/:imdbId" element={<WatchPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

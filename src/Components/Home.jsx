@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import homeimg from "../Assets/Home.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [toprated, setToprated] = useState();
@@ -28,6 +29,9 @@ const Home = () => {
             />
             <h2>{el.original_title}</h2>
             <p>{el.overview}</p>
+            <Link to={`/movies/${el.id}`}>
+              <button>Go to movie</button>
+            </Link>
           </div>
         ))}
     </div>
